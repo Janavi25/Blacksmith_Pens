@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126834278470",
+    "firebase_url": "https://blacksmith-3a2b0.firebaseio.com",
+    "project_id": "blacksmith-3a2b0",
+    "storage_bucket": "blacksmith-3a2b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126834278470:android:d5d669914caf0d53998a47",
+        "android_client_info": {
+          "package_name": "com.example.blacksmithpens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126834278470-knne2i0egn1rs0v5vpdl4lv4vh8c7ron.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blacksmithpens",
+            "certificate_hash": "53ec12e2fc244007888f886e24d273d9a3c3304d"
+          }
+        },
+        {
+          "client_id": "126834278470-7gd7e7cfhujj2cuttdukj60qjvvec9tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtl_trBIStlnVPsrHXjmEJCtlqn-ask1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126834278470-7gd7e7cfhujj2cuttdukj60qjvvec9tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

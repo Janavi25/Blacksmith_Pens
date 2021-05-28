@@ -1,0 +1,999 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="htmlcss bootstrap sticky top menu, navbar, CSS examples" />
+  <meta name="description" content="Bootstrap sticky header menu for any type of project, Bootstrap 4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <meta name='apple-mobile-web-app-capable' content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+
+
+
+  <title>Blacksmith Pens</title>
+
+  <link rel="icon" href="image/whitebslogo.png" type="image/x-icon ">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="title icon" type="image/png" href="images/title-img.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    type="text/javascript"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+    .nav-item a:hover {
+      color: #00ccff !important;
+      cursor: pointer;
+      background: #000;
+    }
+
+    .navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      font-size: 17px;
+      align-items: center;
+      background-color: #000000;
+      justify-content: space-between;
+
+    }
+
+    @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+    .dropdown-menu {
+      font-size: 17px;
+      background: #000000;
+    }
+
+    .dropdown-item {
+      color: #ffffff;
+    }
+
+    .style {
+      float: right;
+      margin-top: 20px;
+    }
+
+    .text {
+      float: right;
+    }
+
+    .image {
+      margin-top: -10px;
+    }
+
+    body {
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      border-top: 5px solid #00ccff;
+      /*
+ border-left:5px solid #00ccff ;
+ border-right: 5px solid #00ccff;
+*/
+    }
+
+    .slider {
+      overflow: hidden;
+    }
+
+    .slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 24s slider infinite;
+    }
+
+    .slider figure img {
+      width: 20%;
+      float: left;
+    }
+
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+
+      20% {
+        left: 0;
+      }
+
+      25% {
+        left: -100%;
+      }
+
+      45% {
+        left: -100%
+      }
+
+      50% {
+        left: -200%;
+      }
+
+      70% {
+        left: -200%;
+      }
+
+      75% {
+        left: -300%;
+      }
+
+      95% {
+        left: -300%;
+      }
+
+      100% {
+        left: -400%;
+      }
+    }
+
+    .example {
+      padding: 20px;
+      color: black;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {}
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+
+    @media only screen and (max-width: 992px) {}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (max-width: 768px) {}
+
+    /*
+.home_about_sec {
+  background-image: url(image/aboutusbackground.jpg),url(../images/bg.pngx);
+  background-repeat: no-repeat,no-repeat;
+  background-position: 5% center,right bottom;
+  padding: 50px 0;
+  min-height: 715px;
+}
+*/
+
+    #button {
+      width: 170px;
+      height: 50px;
+      border: none;
+      border: solid 3px #00ccff;
+      border-radius: px;
+      background: rgba(255, 255, 255, 0);
+      font-size: 25px;
+    }
+
+    #button a {
+      color: black;
+    }
+
+    #button a hover {
+      color: black;
+    }
+
+    #button:hover {
+      background: #d2edfd;
+      color: black;
+      border: solid 3px #00ccff;
+    }
+
+    @media screen and (min-width:768px) {
+
+      .column-66,
+      .column-33 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      .column-66,
+      .column-33 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    #btn {
+      width: 140px;
+      height: 40px;
+      border: none;
+      border: solid 3px #00ccff;
+      border-radius: px;
+      background: white;
+      font-size: 20px;
+      align-items: center;
+    }
+
+    #btn a {
+      color: black;
+    }
+
+    .section_d {
+      background: #F0F0F0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /*
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+    .container {
+      /*  padding: 40px;*/
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both
+    }
+
+    .column-66 {
+      float: left;
+      width: 66.66666%;
+      padding: 20px;
+    }
+
+    .column-33 {
+      float: left;
+      width: 33.33333%;
+      padding: 20px;
+    }
+
+    .large-font {
+      font-size: 38px;
+    }
+
+    .xlarge-font {
+      font-size: 40px
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #000000;
+    }
+
+    /*
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+*/
+
+    @media screen and (max-width: 1000px) {
+
+      .column-66,
+      .column-33 {
+        width: 100%;
+        text-align: center;
+      }
+
+      /*
+  img {
+    margin: auto;
+  }
+*/
+    }
+
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    #team {
+      background: url(image/1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-position: 70% 100%;
+    }
+
+    /*
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #108d6f; 
+  border-color: #108d6f;
+  box-shadow: none;
+  outline: none;
+}
+    
+*/
+
+    /*
+.btn-primary {
+  color: #fff;
+  background-color: #007b5e;
+  border-color: #007b5e;
+}
+*/
+
+    section {
+      padding: 60px 0;
+    }
+
+    section .section-title {
+      text-align: center;
+      color: black;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    #team .card {
+      border: none;
+      background: #ffffff;
+    }
+
+    .image-flip:hover .backside,
+    .image-flip.hover .backside {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      border-radius: .50rem;
+    }
+
+    .image-flip:hover .frontside,
+    .image-flip.hover .frontside {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+
+    .mainflip {
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -moz-transition: 1s;
+      -moz-transform: perspective(1000px);
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .frontside {
+      position: relative;
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      z-index: 2;
+      margin-bottom: 30px;
+    }
+
+    .backside {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    }
+
+    .frontside,
+    .backside {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1s;
+      -o-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+    }
+
+    .frontside .card,
+    .backside .card {
+      min-height: 250px;
+
+    }
+
+    .backside .card a {
+      font-size: 18px;
+      color: #00ccff !important;
+    }
+
+    .frontside .card .card-title {
+      color: black;
+    }
+
+    .backside .card .card-title {
+      color: #00ccff !important;
+    }
+
+    .frontside .card .card-body img {
+      width: 200px;
+      height: 200px;
+      /*    border-radius: 50%;*/
+    }
+
+    /*
+    #services {
+    padding: 120px 0;
+}
+    
+*/
+
+    #services i.fa {
+      font-size: 38px;
+      margin-bottom: 20px;
+      transition: all 0.5s;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      padding: 30px 0;
+      background: #F00;
+      border-radius: 50%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- section-header.// -->
+  <header class="section-header py-1 " style="background-color:#d2edfd">
+    <div class="container">
+
+      <div class="style">
+
+        <h1 class="text" style="font-size: 25px;font-family: fantasy;">ALLIANCE WRITING INSTRUMENTS</h1>
+        <br />
+        <h2 class="text1" style="font-size: 20px; text-align: center;font-family:serif;">House of Luxurious Writing
+          Instruments</h2>
+
+      </div>
+
+      <img src="image/logo.png" class="image">
+
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top " id="nv">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="float: left; "><img src="image/whitebslogo.png"> </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item px-2"> <a class="nav-link " style="color: #ffffff;  " href="index.html">
+              <strong>HOME</strong> </a>
+          </li>
+
+          <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="about1.html"> <strong> ABOUT
+                US</strong></a>
+          </li>
+
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link  dropdown-toggle " style="color: #ffffff ; " href="product.html" data-toggle="dropdown"
+              title="PRODUCTS" type="button"><strong>PRODUCTS</strong> </a>
+
+            <div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="twist.html"> TWIST PEN</a></li>
+                <li><a class="dropdown-item" href="#"> ROLLER PEN</a></li>
+                <li><a class="dropdown-item" href="#"> MINI PEN </a></li>
+                <li><a class="dropdown-item" href="#"> TWIST PEN</a></li>
+                <li><a class="dropdown-item" href="#"> LOGO PEN </a></li>
+                <li><a class="dropdown-item" href="#"> STYLUS PEN </a></li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="oem.html">
+              <strong>OEM </strong></a>
+          </li>
+
+          <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="promotional.html"><strong>CORPORATE
+                &amp; PROMOTIONAL PEN</strong> </a>
+          </li>
+
+          <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="enquiry.html">
+              <strong>ENQUIRY</strong> </a>
+          </li>
+
+          <li class="nav-item px-2 "><a class="nav-link" style="color: #ffffff" href="contact.html"><strong> CONTACT US
+              </strong></a>
+          </li>
+
+        </ul>
+      </div> <!-- navbar-collapse.// -->
+    </div><!-- container //  -->
+  </nav>
+
+
+  <div class="slider">
+    <figure>
+      <img src="image/2.jpg">
+      <img src="image/3.jpg">
+      <img src="image/4.jpg">
+      <img src="image/5.jpg">
+      <img src="image/2.jpg">
+    </figure>
+  </div>
+
+  <br />
+
+  <section class="about-us home_about_sec" ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-xs-12 text-center"
+          style=" padding: 0 20px 20px 0;background-image: url(image/greybslogo.jpg);background-repeat: no-repeat;background-size: contain;">
+          <img src="image/pen1.png" alt="pen" style="float: left; padding: 0 20px 20px 0;">
+        </div>
+        <div class="col-md-9 col-xs-12"
+          style="background-image: url(image/aboutus.jpg);background-repeat: no-repeat;background-size:contain; width: 1000px">
+          <div class="sec-title2">
+            <h1 style="font-size: 40px;color: #00ccff"><span
+                style="font-family: Brush Script MT, Brush Script Std, cursive; font-size: 70px;color: #00ccff">About</span>
+              Blacksmith Pens</h1>
+          </div>
+          <p style="font-size: 30px;">Blacksmith is a Leading Manufacturer and Exporter of writing instruments of
+            International standards. Blacksmith showcases one of the widest ranges of pens
+            ball pens, mechanical pencils and roller pens in metal as well as half metal.<br></p>
+          <div class="col-md-12 col-sm-12 col-xs-12 read">
+            <button id="button"><a href="about.html">Read More</a></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <br />
+    
+    
+  <div id="services" class="text-center" style=" background: #f5f5f5 ">
+    <div class="container-fluid"><br />
+      <h3 class="section-title h1"><strong style="font-size: 30px;">CORE VALUES</strong></h3>
+        <div style="width: 100px;height: 2px;background:#00ccff" class="container" ></div>
+     
+      <br />
+      <div class="row">
+        <div class="col-xs-6 col-md-3"> <i class="fa fa-comments" style="font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    background: #000000;
+    border-radius: 50%;"></i>
+          <h4>SATISFACTION</h4>
+        
+        </div>
+        <div class="col-xs-6 col-md-3"> <i class="fa fa-bullhorn" style="font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    background: #000000;
+    border-radius: 50%;"></i>
+          <h4>MISSION</h4>
+       
+        </div>
+        <div class="col-xs-6 col-md-3"> <i class="fa fa-eye" style="font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    background: #000000;
+    border-radius: 50%;"></i>
+          <h4>VISION</h4>
+          
+        </div>
+        <div class="col-xs-6 col-md-3"> <i class="fa fa-magic" style="font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    background: #000000;
+    border-radius: 50%;"></i>
+          <h4>INNOVATIONS</h4>
+
+
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+ 
+    
+    
+  <section id="team" class="pb-5">
+    <div class="container-fluid">
+      <h3 class="section-title h1"><strong style="font-size: 40px;font-family: sans-serif">PRODUCTS</strong></h3>
+      <div class="row">
+       
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/retractablepen%20.png" alt="card image"></p>
+                    <h4 class="card-title">RETRACTABLE PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">RETRACTABLE PEN</h4>
+                    <p class="card-text">Retractable pens have a spring-loaded ink cartridge which retracts and extends
+                      outside a protective housing</p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">RETRACTABLE PEN</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/twistpen.png" alt="card image"></p>
+                    <h4 class="card-title">TWIST PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">TWIST PEN</h4>
+                    <p class="card-text">The pen’s build is robust and durable yet comfortable,and features a balanced
+                      center of mass that makes writing with it comfortable. </p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">TWIST PEN</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/minipen.png" alt="card image"></p>
+                    <h4 class="card-title">MINI PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">MINI PEN</h4>
+                    <p class="card-text"> Mini pen is the perfect take-anywhere accessory fitting easily in agendas
+                      small handbags or even discreetly in your jeans back pocket.</p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">MINI PEN</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/logopen.png" alt="card image"></p>
+                    <h4 class="card-title">LOGO PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">LOGO PEN</h4>
+                    <p class="card-text">Logo pens are a fun and cost effective method of promoting your business and
+                      are a great way to show off your brand</p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">LOGO PEN</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/styluspen.png" alt="card image"></p>
+                    <h4 class="card-title">STYLUS PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">STYLUS PEN</h4>
+                    <p class="card-text">a stylus is a pen-like object people use to point, swipe, sign, and draw on all
+                      manner of touchscreens and electronic devices.</p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">STYLUS PEN</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="image/rollerpen.png" alt="card image"></p>
+                    <h4 class="card-title">ROLLER PEN</h4>
+                    <p class="card-text"></p>
+                    <a href=""><i class=""></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">ROLLER PEN</h4>
+                    <p class="card-text">Roller pens are pens which use ball point writing mechanisms with water-based
+                      liquid or gelled inkx.</p>
+
+                    <button class="button" style="background-color:#00ccff; color:black">TWIST PEN</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="column-66">
+          <h1><b>ORIGINAL EQUIPMENT MANUFACTURERS</b></h1>
+          <h1 class="large-font" style="color:#00ccff;"><b>(OEM)</b></h1>
+          <p> OEM AS PER CUSTOMER SPECIFICATION : Your Vision, Our Creation. We specialise in customising pens as per
+            customers idea.</p>
+          <button class="button"><a style="text-decoration: none;color: #ffffff" href="oem.html">READ
+              MORE...</a></button>
+          <br />
+          <br />
+        </div>
+        <div class="column-33">
+          <img src="image/oem.png" width="335" height="300px;">
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container" style="background-color:#F5F5F5; ">
+      <div class="row">
+        <div class="column-33">
+          <img src="image/4.jpg" alt="pen" width="335" height="300">
+        </div>
+        <br />
+        <br />
+        <div class="column-66">
+          <h1 class="xlarge-font"><b>CORPORATE & PROMOTIONAL PENS</b></h1>
+
+          <p>LEGEND has a wide range of Promotional Metal Pens. Custom metal pens that are not only practical items to
+            give away, they also help people remember your brand or event. </p>
+          <button class="button" style="background-color:#00ccff; "><a style="text-decoration: none;color: #000;"
+              href="promotional.html">READ MORE...</a></button>
+        </div>
+      </div>
+
+    </div>
+    <br />
+  </section>
+  <footer style="background-color: #000000;bottom: 0">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4 text-center text-md-left ">
+
+          <div class="py-0">
+            <h3 class="my-4 text-white"><strong class="mx-2 font-bold " style="color:#00ccff ">Blacksmith®</strong></h3>
+
+            <p class="footer-links font-weight-bold">
+              <a class="text-white" href="index.html">Home</a>
+              |
+              <a class="text-white" href="#">About Us</a>
+              |
+              <a class="text-white" href="product.html">products</a>
+              |
+              <a class="text-white" href="oem.html">OEM</a>
+              |
+              <a class="text-white" href="#">Enquiry</a>
+              |
+              <a class="text-white" href="#">Contact Us</a>
+              |
+              <a class="text-white" href="#">Corporate &amp; Promotional pen</a>
+
+            </p>
+            <p class="text-light py-4 mb-4">&copy;2019 Blacksmith Pvt. Ltd.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white text-center text-md-left ">
+          <div class="py-2 my-4">
+            <div>
+              <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                Unit No. 115,Sagar Manthan Ind.Est.,
+                1st Floor,Shubh Bldg.,
+                Bhoidapada,Vasai(East) Palghar - 401208,
+                Maharashtra,INDIA.</p>
+            </div>
+
+            <div>
+              <p><i class="fa fa-phone  mx-2 "></i> +91 7798298246</p>
+              <p><i class="fa fa-envelope mx-2"></i> awipenproduct@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white my-4 text-center text-md-left ">
+          <span class=" font-weight-bold ">About the Company</span>
+          <p class=" my-2" style="color: #00ccff">Blacksmith is a Leading Manufacturer and Exporter of writing
+            instruments of International standards.</p>
+          <div class="py-2">
+            <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+            <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x text-danger mx-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDob-ZUgfwfJ-vkXedLFe5t2jFyVFu5b04",
+      authDomain: "blacksmith-3a2b0.firebaseapp.com",
+      databaseURL: "https://blacksmith-3a2b0.firebaseio.com",
+      projectId: "blacksmith-3a2b0",
+      storageBucket: "blacksmith-3a2b0.appspot.com",
+      messagingSenderId: "126834278470",
+      appId: "1:126834278470:web:ba7f394f007e3c75998a47",
+      measurementId: "G-B7J7F44R5C"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>

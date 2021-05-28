@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="htmlcss bootstrap sticky top menu, navbar, CSS examples" />
+    <meta name="description" content="Bootstrap sticky header menu for any type of project, Bootstrap 4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+    <title>Blacksmith Pens</title>
+    <link rel="icon" href="image/whitebslogo.png" type="image/x-icon ">
+    <link rel="title icon" type="image/png" href="images/title-img.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <title>Blacksmith Pens</title>
+    <link rel="icon" href="image/whitebslogo.png" type="image/x-icon ">
+
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <style>
+        .nav-item a:hover {
+            color: #00ccff !important;
+            cursor: pointer;
+            background: #000;
+
+        }
+
+        .navbar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            font-size: 17px;
+            align-items: center;
+            background-color: #000000;
+            justify-content: space-between;
+            /* padding: ; */
+        }
+
+        @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+        .dropdown-menu {
+            font-size: 17px;
+            background: #000000;
+
+        }
+
+        .dropdown-item {
+            color: #ffffff;
+        }
+
+        .style {
+            float: right;
+            margin-top: 20px;
+
+        }
+
+        .text {
+            float: right;
+        }
+
+        .image {
+            margin-top: -10px;
+
+
+        }
+
+        body {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-top: 5px solid #00ccff;
+            /*
+        border-left:5px solid #00ccff ;
+            border-right: 5px solid #00ccff;
+*/
+        }
+
+
+
+
+
+
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700,900');
+
+
+
+
+
+        /* * {
+                margin: 0;
+                padding: 0;
+            } */
+
+
+
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes spinRevert {
+            from {
+                transform: rotateY(360deg);
+            }
+
+            to {
+                transform: rotateY(0deg);
+            }
+        }
+
+
+
+
+        @media(max-width:1000px) {
+
+            .content {
+                word-wrap: break-word;
+                font-size: 1.5vw;
+            }
+
+            @media(max-width:600px) {
+
+
+                .content {
+                    word-wrap: break-word;
+                    font-size: 4vw;
+                    box-shadow: 10px 10px 5px #aaaaaa;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="section-header py-1 " style="background-color:#d2edfd">
+        <div class="container">
+
+            <div class="style">
+
+                <h1 class="text" style="font-size: 25px;font-family: fantasy;">ALLIANCE WRITING INSTRUMENTS</h1>
+                <br />
+
+                <h2 class="text1" style="font-size: 20px; text-align: center;font-family:serif;">House of Luxurious
+                    Writing Instruments</h2>
+            </div>
+            <img src="image/logo.png" class="image">
+        </div>
+    </header> <!-- section-header.// -->
+    <!-- ========================= SECTION CONTENT ========================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="float: left; "><img src="image/whitebslogo.png"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-2"> <a class="nav-link " style="color: #ffffff;  " href="index.html">
+                            <strong>HOME</strong> </a> </li>
+                    <li><a></a></li>
+                    <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="about1.html"> <strong>
+                                ABOUT US</strong></a></li>
+                    <li><a></a></li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link  dropdown-toggle" style="color: #ffffff" href="product.html"
+                            data-toggle="dropdown"><strong>PRODUCTS</strong> </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> TWIST PEN</a></li>
+                            <li><a class="dropdown-item" href="#"> ROLLER PEN</a></li>
+                            <li><a class="dropdown-item" href="#"> MINI PEN </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a></a></li>
+                    <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="oem.html">
+                            <strong>OEM </strong></a></li>
+                    <li><a></a></li>
+                    <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff"
+                            href="promotional.html"><strong>CORPORATE & PROMOTIONAL PEN</strong> </a></li>
+                    <li><a></a></li>
+                    <li class="nav-item px-2"><a class="nav-link" style="color: #ffffff" href="enquiry.html">
+                            <strong>ENQUIRY</strong> </a></li>
+                    <li><a></a></li>
+                    <li class="nav-item px-2 "><a class="nav-link" style="color: #ffffff" href="contact.html"><strong>
+                                CONTACT US </strong></a></li>
+
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div><!-- container //  -->
+    </nav>
+
+
+
+
+    <img src="image/5.jpg" width="100%" height="auto">
+
+    <h1 class="section-title"
+        style="color: black;padding: 20px 0px; text-align: center;font-size: 30px;">
+        Why choose Blacksmith Pens for Gifts &amp; Promotions?</h1>
+
+
+
+    <section class="container">
+        <p style="color: black">BLACKSMITH has a wide range of
+            Promotional Metal Pens. Custom metal pens that are not only practical items to give away, they also help
+            people remember your brand or event.Promotional metal pens are not only durable and long-lasting products,
+            but they tend to leave potent yet subtle impressions; they're handy to have around, and your clients will
+            remember you every time they use them. Have your metal promotional pens engraved with graphics and logos to
+            be handed out at conferences, tradeshows, parent/teacher evenings, and all sorts of corporate events.
+            Clients are guaranteed to love the look of these elegant, high-quality writing instruments that they can use
+            at work, home, school, and on the go, all while marketing your services and business.</p>
+    </section>
+    <br>
+
+    <!--
+     <h1 class="section-title" style="color: black;margin-bottom: 10px;padding: 60px 0px; text-align: center;font-size: 50px;font-family: 'Katibeh', cursive;"> Corporate &amp; Promotional Pens </h1>
+    <section class="row clearfix  m_sm_bottom_35 fea container">
+    <div class="col-lg-6 col-xs-6 col-sm-6" style="text-align:center;">
+						<img src="image/corporate.jpg" style="padding-bottom:15px;" class="img-responsive">
+						</div>
+						<div class="col-lg-6 col-xs-6 col-sm-6" style="text-align:center;">
+						
+						<p class="ele" style="font-size:18px;font-weight:700;color:black;font-family: 'Katibeh', cursive;"> Professional Look</p></div>
+    </section>
+-->
+
+
+    <!--
+    
+    <div class="container" style="background-image: url(image/promo.jpg);background-repeat: no-repeat;background-size: 100% ; height: 600px;position: relative; display: flex;
+  justify-content: center;
+  align-items: center; ">
+        <div class="transbox container" style=" 
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;position: absolute;  top: 50%;
+  transform: translateY(-50%);width: 90%">
+        <div><h1 class="promotional_pens" style="text-align: center;font-family: 'Katibeh', cursive;color: #000; font-size: 40px;  margin: 5%;">Promotional and Personalized pens</h1></div>
+        <div class="promotional_pens_info" style="text-align: center;font-family: 'Katibeh', cursive;color: #000; font-size: 25px;  margin: 5%;">Legend Pens is a trusted source when it comes to Promotional and Personalized Gifts. We offer a wide range of Promotional Products and Personalized Pens with imprinted logos, graphics and messages that would help your clients remember you. Our seasonal and specialized offers make your purchase cost-effective. Our widespread business gives our clients universal accessibility to our products. Our high quality promotional products are manufactured, assembled and distributed directly from within the EU for a reliable service. We aim at creating an impression each time we innovate something. We have successfully managed to build partnerships with our clients through our personalized pens.</div>
+    </div>
+    </div>
+    <br>
+-->
+
+
+    <footer style="background-color: #000000">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+
+                    <div class="py-0">
+                        <h3 class="my-4 text-white"><strong class="mx-2 font-bold "
+                                style="color:#00ccff ">Blacksmith®</strong></h3>
+
+                        <p class="footer-links font-weight-bold">
+                            <a class="text-white" href="#">Home</a>
+                            |
+                            <a class="text-white" href="#">About Us</a>
+                            |
+                            <a class="text-white" href="#">products</a>
+                            |
+                            <a class="text-white" href="#">OEM</a>
+                            |
+                            <a class="text-white" href="#">Enquiry</a>
+                            |
+                            <a class="text-white" href="#">Contact Us</a>
+                            |
+                            <a class="text-white" href="#">Corporate & Promotional pen</a>
+
+                        </p>
+                        <p class="text-light py-4 mb-4">&copy;2019 Blacksmith Pvt. Ltd.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4">
+                        <div>
+                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                                Unit No. 115,Sagar Manthan Ind.Est.,
+                                1st Floor,Shubh Bldg.,
+                                Bhoidapada,Vasai(East) Palghar - 401208,
+                                Maharashtra,INDIA.</p>
+                        </div>
+
+                        <div>
+                            <p><i class="fa fa-phone  mx-2 "></i> +91 7798298246</p>
+                            <p><i class="fa fa-envelope mx-2"></i> awipenproduct@gmail.com</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <span class=" font-weight-bold ">About the Company</span>
+                    <p class=" my-2" style="color: #00ccff">We offer training and skill building courses across
+                        Technology, Design, Management, Science and Humanities.</p>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                        <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x text-danger mx-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</body>
+
+
+</html>
